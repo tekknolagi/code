@@ -1,5 +1,5 @@
 #!/bin/bash
-git rm gol
+git rm -rf gol
 git add .
 git commit -m "$1"
 git push
