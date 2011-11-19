@@ -7,7 +7,7 @@
 int *gb[HEIGHT];
 int *gb2[HEIGHT];
 
-void copy(/*int *gb[HEIGHT][WIDTH], int *gb2[HEIGHT][WIDTH]*/) {
+void copy(int *gb[HEIGHT], int *gb2[HEIGHT]) {
   int i, j;
   for (i = 0; i < HEIGHT; i++) {
     for (j = 0; j < WIDTH; j++) {
@@ -28,7 +28,7 @@ void init() {
     }
   }
   gb[3][3] = gb[3][4] = gb[4][4] = gb[5][4] = gb[5][3] = gb[5][2] = gb[4][2] = gb[3][2] = 1;
-  copy(/*&gb, &gb2*/);
+  copy(&gb, &gb2);
 }
 
 void printg() {
