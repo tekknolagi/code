@@ -7,7 +7,7 @@
 int *gb[HEIGHT];
 int *gb2[HEIGHT];
 
-void copy(int *gb[HEIGHT], int *gb2[HEIGHT]) {
+void copy(int *gb[][WIDTH], int *gb2[][WIDTH]) {
   int i, j;
   for (i = 0; i < HEIGHT; i++) {
     for (j = 0; j < WIDTH; j++) {
