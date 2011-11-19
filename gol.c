@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define HEIGHT 13
-#define WIDTH 13
+#define HEIGHT 10
+#define WIDTH 10
 
 int *gb[HEIGHT];
 int *gb2[HEIGHT];
 
-void copy() {
+void copy(int *gb[HEIGHT][WIDTH], int *gb2[HEIGHT][WIDTH]) {
   int i, j;
   for (i = 0; i < HEIGHT; i++) {
     for (j = 0; j < WIDTH; j++) {
@@ -28,7 +28,7 @@ void init() {
     }
   }
   gb[3][3] = gb[3][4] = gb[4][4] = gb[5][4] = gb[5][3] = gb[5][2] = gb[4][2] = gb[3][2] = 1;
-  copy();
+  copy(&gb, &gb2);
 }
 
 void printg() {
