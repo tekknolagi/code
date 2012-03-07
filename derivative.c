@@ -2,7 +2,7 @@
 #include <math.h>
 
 /*
-  Calculates the derivative of a polynomial function.
+  Calculates the derivative of a polynomial function at a given value.
   Usage: ./polynomial 1 2 3 4 5
   Gives: d/dx (f(x) = x^3 + 2x^2 + 3x + 4) at x = 5
 */
